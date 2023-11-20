@@ -6,7 +6,7 @@
 /*   By: faneves <faneves@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/13 16:44:32 by faneves           #+#    #+#             */
-/*   Updated: 2023/11/20 14:14:55 by faneves          ###   ########.fr       */
+/*   Updated: 2023/11/20 14:37:15 by faneves          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,11 +21,13 @@
 
 //hexadecimal
 
-void	ft_putnbr_fd(int n, int base)
+void	ft_printdigit(long n, int base)
 {
 	char	*str;
+	int	count;
 
 	str = "0123456789abcdef"
+	if (n < 0)
 	if (n >= 10)
 	{
 		ft_putnbr_fd(n / base);
@@ -37,7 +39,7 @@ void	ft_putnbr_fd(int n, int base)
 
 //decimal
 
-void	ft_putnbr_fd(int n, int base)
+void	ft_printdigit(int n, int base)
 {
 	char	*str;
 
